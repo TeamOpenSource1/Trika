@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Checkout example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h2>Checkout form</h2>
+        <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      </div>
+
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Datos Personal</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Nombres</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Se necesitan tus Nombres :C
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Apellidos</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                   Se necesitan tus Apellidos :C
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div class=" col-md-6 mb-3">
+              <label for="username">ID</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="username" placeholder="Identificación" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Se necesita un ID :C
+                </div>
+              </div>
+            </div>
+
+             <div class=" col-md-6 mb-3">
+              <label for="username">Imagen</label>
+              <div class="input-group">
+                 <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile04" required>
+                  <label class="custom-file-label" for="inputGroupFile04">Foto de Perfil</label>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+          <div class="mb-3">
+              <label for="password">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+              <div class="invalid-feedback">
+                se necesita una contraseña :C
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Contraseña <span class="text-muted">(Confirmar la contraseña)</span></label>
+              <input type="password" class="form-control" id="password2" placeholder="Otra vez la contraseña">
+               <div class="invalid-feedback">
+                se necesita confirmar la contraseña :C
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Se necesita un correo :C
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Universidad</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">Choose...</option>
+                  <option>Pontificia Universidad Católica del Perú</option>
+                  <option>Universidad Peruana Cayetano Heredia</option>
+                  <option>Universidad Católica de Santa María</option>
+                  <option>Universidad del Pacífico</option>
+                  <option>Universidad de Lima</option>
+                  <option>Universidad de San Martín de Porres</option>
+                  <option>Universidad Femenina del Sagrado Corazón</option>
+                  <option>Universidad Inca Garcilaso de la Vega</option>
+                  <option>Universidad de Piura</option>
+                  <option>Universidad Ricardo Palma</option>
+                  <option>Universidad Andina Néstor Cáceres Velásquez</option>
+                  <option>Universidad Peruana Los Andes</option>
+                  <option>Universidad Peruana Unión</option>
+                  <option>Universidad Andina del Cusco</option>
+                  <option>Universidad Tecnológica de los Andes</option>
+                  <option>Universidad Privada de Tacna</option>
+                  <option>Universidad Particular de Chiclayo</option>
+                  <option>Universidad Católica Los Ángeles de Chimbote</option>
+                  <option>Universidad San Pedro</option>
+                  <option>Universidad Privada Antenor Orrego</option>
+                  <option>Universidad de Huánuco</option>
+                  <option>Universidad José Carlos Mariátegui</option>
+                  <option>Universidad Privada Marcelino Champagnat</option>
+                  <option>Universidad Cientfica del Perú</option>
+                  <option>Universidad Privada César Vallejo</option>
+                  <option>Universidad Peruana de Ciencias Aplicadas</option>
+                  <option>Universidad Privada del Norte</option>
+                  <option>Universidad San Ignacio de Loyola</option>
+                  <option>Universidad Alas Peruanas</option>
+                  <option>UUniversidad Privada Norbert Wiener</option>
+                  <option>Universidad Católica San Pablo</option>
+                  <option>Universidad Privada de Ica S.A.</option>
+                  <option>Universidad Privada San Juan Bautista SAC</option>
+                  <option>Universidad Tecnológica del Perú</option>
+                  <option>Universidad Continental</option>
+                  <option>Universidad Científica del Sur</option>
+                  <option>Universidad Católica Santo Toribio de Mogrovejo</option>
+                  <option>Universidad Privada Antonio Guillermo Urrelo</option>
+                  <option>Universidad Católica Sedes Sapientiae</option>
+                  <option>Universidad Señor de Sipán</option>
+                  <option>Universidad Católica de Trujillo Benedicto XVI</option>
+                  <option>Universidad para el Desarrollo Andino</option>
+                  <option>Universidad Peruana de Ciencias e Informática</option>
+                  <option>Universidad Sergio Bernales S.A.C.</option>
+                  <option>Universidad Peruana de las Américas</option>
+                  <option>Universidad ESAN</option>
+                  <option>Universidad Antonio Ruiz de Montoya</option>
+                  <option>Universidad Privada Telesup</option>
+                  <option>Universidad Privada de Pucallpa</option>
+                  <option>Universidad Autónoma de Ica SAC</option>
+                  <option>Universidad Privada San Carlos</option>
+                  <option>Universidad Peruana Simón Bolivar</option>
+                  <option>Universidad Peruana del Oriente S.A.C.</option>
+                  <option>Universidad de Ciencias y Humanidades</option>
+                  <option>Universidad Peruana de Integración Global</option>
+                  <option>Universidad Autónoma del Perú</option>
+                  <option>Universidad Privada Juan Meja Baca</option>
+                  <option>Universidad Jaime Bausate y Meza</option>
+                  <option>Universidad Peruana del Centro</option>
+                  <option>Universidad Privada Arzobispo Loayza</option>
+                  <option>Universidad Le Cordon Bleu</option>
+                  <option>Universidad Privada de Huancayo "Franklin Roosevelt"</option>
+                  <option>Universidad de Lambayeque</option>
+                  <option>Universidad de Ciencias y Artes de América Latina</option>
+                  <option>Universidad Peruana de Arte Orval</option>
+                  <option>Universidad Privada de la Selva Peruana</option>
+                  <option>Universidad Ciencias de la Salud</option>
+                  <option>Universidad de Ayacucho Federico Froebel</option>
+                  <option>Universidad Peruana de Investigación y Negocios</option>
+                  <option>Universidad Peruana Austral del Cusco</option>
+                  <option>Universidad Autónoma San Francisco</option>
+                  <option>Universidad San Andrés</option>
+                  <option>Universidad Interamericana para el Desarrollo</option>
+                  <option>Universidad Privada Juan Pablo II</option>
+                  <option>Universidad Privada Leonardo Da Vinci SAC.</option>
+                  <option>Universidad de Ingeniería y Tecnología</option>
+                  <option>Universidad La Salle</option>
+                  <option>Universidad Latinoamericana CIMA</option>
+                  <option>Universidad Privada de Trujillo</option>
+                  <option>Universidad Privada Autónoma del Sur</option>
+                  <option>Universidad María Auxiliadora</option>
+                  <option>Universidad Politécnica Amazónica S.A.C.</option>
+                  <option>Universidad Santo Domingo de Guzmán</option>
+                  <option>Universidad Marítima del Perú</option>
+                  <option>Universidad Privada Líder Peruana</option>
+                  <option>Universidad Privada Peruano Alemana S.AC.</option>
+                  <option>Universidad Global del Cusco</option>
+                  <option>Universidad Santo Tomás de Aquino de Ciencia e Integración</option>
+                  <option>Universidad Privada SISE</option>
+                  <option>Universidad Seminario Evangélico de Lima</option>
+                  <option>Universidad Seminario Bíblico Andino</option>
+                  <option>Facultad de Teología Pontificia y Civil de Lima (**)</option>
+
+                </select>
+                <div class="invalid-feedback">
+                  Se necesita una Universidad
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Carrera</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Se necesita una carrera :C
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="teléfono">Teléfono</label>
+                <input type="tel" class="form-control" id="zip" placeholder="Teléfono" required>
+                <div class="invalid-feedback">
+                  Se necesita un teléfono :C
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-block mt-4" type="submit">Continue to checkout</button>
+          </form>
+        </div>
+      </div>
+      
+       <footer class="container mt-5">
+        <p>&copy; 2018 Leabhard Corporation  &middot; <a href="#">Términos</a> &middot; <a href="#">Privacidad</a></p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>

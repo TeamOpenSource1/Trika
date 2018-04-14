@@ -1,0 +1,11 @@
+.thumb {
+	border-radius:150px;
+	width:120px;
+	transition:300ms all ease;
+}
+
+.grande {
+	border-radius:150px;
+	width:150px;
+	height:150px;
+}
